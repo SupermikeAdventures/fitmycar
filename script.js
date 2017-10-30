@@ -4,10 +4,9 @@ $(document).ready(function () {
 
   // Main Header Resized Width When Focus
   $('#fmc-main-header-search').focus(function () {
-    $('.head-mid-tabs').attr('style', 'display: none;');
-    $('.head-mid-search').css('width', '70%').css('padding', '25px 10px');
+    $('.head-mid-search').css('width', '30%');
     $('#fmc-main-header-search').attr('placeholder', 'BMW 3 Series');
-    $('.fmc-main-header-search-btn').attr('style', 'padding: 19px 30px; background: linear-gradient(to left, #284869, #0f4a6c); border-color: #0c4265; box-shadow: 0px 5px 15px #dde1eb;');
+    $('.fmc-main-header-search-btn').attr('style', 'padding: 16px 22px; background: linear-gradient(to left, #284869, #0f4a6c); border-color: #0c4265; box-shadow: 0px 5px 15px #dde1eb;');
     $('.fa-search').css('color', '#fff');
   });
   $('#fmc-main-header-search').blur(function () {
@@ -17,9 +16,6 @@ $(document).ready(function () {
     $('.fmc-main-header-search-btn').removeAttr('style');
     $('.head-mid-search').removeAttr('style');
     $('.fa-search').css('color', '#555');
-    setTimeout(function() {
-      $('.head-mid-tabs').removeAttr('style');
-    }, 250);
   });
 
   // Contact Search Input Change Placeholder Text
