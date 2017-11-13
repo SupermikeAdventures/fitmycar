@@ -1,2 +1,2 @@
-FitMyCar's Home Page Redesign:
-https://supermikeadventures.github.io/fitmycar/
+FitMyCar's Home Page Redesign
+Preview: https://supermikeadventures.github.io/fitmycar/
