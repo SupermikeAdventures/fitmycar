@@ -6,8 +6,8 @@ $(document).ready(function () {
   $('#fmc-main-header-search').focus(function () {
     $('.head-mid-search').css('width', '30%');
     $('#fmc-main-header-search').attr('placeholder', 'BMW 3 Series');
-    $('.fmc-main-header-search-btn').attr('style', 'padding: 16px 22px; background: linear-gradient(to left, #284869, #0f4a6c); border-color: #0c4265; box-shadow: 0px 5px 15px #dde1eb;');
-    $('.fa-search').css('color', '#fff');
+    $('.fmc-main-header-search-btn').attr('style', 'padding: 18px 20px;');
+    $(this).parents('.input-group').addClass('focused');
   });
   $('#fmc-main-header-search').blur(function () {
     $('.head-mid-search').css('width', '22.5%');
@@ -16,6 +16,7 @@ $(document).ready(function () {
     $('.fmc-main-header-search-btn').removeAttr('style');
     $('.head-mid-search').removeAttr('style');
     $('.fa-search').css('color', '#555');
+    $(this).parents('.input-group').removeClass('focused');
   });
 
   // Contact Search Input Change Placeholder Text
